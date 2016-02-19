@@ -1,0 +1,496 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300);
+
+
+/*################################  GENERAL  #####################################*/
+html {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 120px;
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 60px;
+    color: #333;
+    letter-spacing: 3px;
+    line-height: 75px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 600;
+    color: #333333;
+    font-size: 28px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+p.info {
+    font-weight: 400;
+    font-size: 30px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+p.small {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #acabb3;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hr.red {
+    border: 3px solid #C41230;
+    display: block;
+    margin: 0 auto;
+    width: 65px;
+}
+
+hr.gray {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid gray;
+    width: 42px;
+}
+
+.mobile-device {
+    display: none!important;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 0 5em;
+}
+
+.col-4 {
+    width: 33.3333333333%;
+    float: left;
+
+}
+
+/*################################  HEDER  #####################################*/
+header {
+    display: block;
+    background-color: #f2ece0;
+    background-image: url('../elements/diwanee-cover.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+header .navigation {
+    width: 100%;
+    padding: 20px 8em;
+    margin-bottom: 235px;
+}
+
+header .logo {
+    float: left;
+    text-indent: -9999px;
+    display: block;
+    background: url('../elements/diwanee-logo.png') no-repeat;
+    width: 125px;
+    height: 34px;
+}
+
+
+/* NAVIGATION */
+    
+nav#nav-main {
+    float: right;
+    margin-top: 7px;
+}
+
+nav#nav-main ul li {
+    display: inline-block;
+    padding-left: 78px;
+}
+nav#nav-main ul li:first-child {
+    padding-left: 0;
+}
+
+nav#nav-main ul li a {
+    font-weight: 400;
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#nav-trigger {
+  display: none;
+  text-align: center; 
+}
+
+nav#nav-main ul {
+    list-style-type: none;
+ }
+ 
+nav#nav-mobile {
+    
+    display: none; 
+    width:100%;
+    float: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+ }
+ 
+nav#nav-mobile ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(54, 54, 54, .9); 
+}
+
+nav#nav-mobile li {
+    
+    display: block;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-bottom: solid 1px gray; 
+}
+
+nav#nav-mobile li:last-child {
+    border-bottom: none; 
+}
+
+nav#nav-mobile a,
+nav#nav-mobile ul li.mobile-device {
+    display: block;
+    color: #f1f9fc;
+    padding: 20px 10px; 
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+.mobile-device .left,
+.mobile-device .social {
+    font-size: 15px;
+    color: #949899;
+}
+.mobile-device .left {
+    float: left;
+    padding-left: 20px;
+    letter-spacing: 2px;
+   
+}
+.mobile-device .social  {
+    float: right;
+    padding-right: 20px;
+}
+
+.social i {
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+header p.info {
+    padding-top: 70px;
+    padding-bottom: 270px;
+    text-align: center;
+}
+
+/*################################  ABOUT AS  ####################################*/
+
+section.about-as {
+    text-align: center;
+    background: #fbfbfb;
+}
+
+section.about-as h3 {
+    padding: 54px 0 42px;
+}
+
+section.about-as p {
+    font-size: 16px;
+    padding: 42px 0 0;
+    line-height: 24px;
+    color: #333333;
+}
+
+section.about-as .middle {
+    background: #ededed;
+}
+
+.middle, .img-left, .img-right {
+    padding: 154px 1.5em 100px;
+}
+.img-left {
+    display: block;
+    background: url('../elements/triangle-white.png') no-repeat;
+    background-position: -310px 72px;
+}
+
+.img-right {
+    display: block;
+    background: url('../elements/square-white.png') no-repeat;
+    background-position:  213px 153px;
+}
+
+/*################################  JOBS  #####################################*/
+section.jobs {
+    padding: 136px 0;
+    background: #ffffff;
+}
+
+section.jobs hgroup {
+    text-align: center;
+}
+
+section.jobs h2 {
+    padding: 29px 0 49px;
+}
+
+section.jobs p.info {
+    padding: 71px 0 94px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 50px;
+    color: #333333;
+} 
+
+
+.col-2 {
+   width: 30%;
+   float: left;
+}
+.col-8 {
+    width: 70%;
+    float: left;
+}
+
+section.jobs p.job-description {
+    padding: 28px 0 38px 0;
+    font-weight: 300;
+    font-size: 24px;
+    color: #888;
+    line-height: 34px;
+    text-align: left;
+}
+
+section.jobs ul li {
+    display: inline-block;
+    margin-right: 3px;
+    list-style-type: none;
+    border: 1px solid #979797;
+    padding: 1px 5px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #C41230;
+    letter-spacing: 2px;
+}
+
+a.btn {
+    border: 1px solid #979797;
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 2px;
+    line-height: 23px;
+    float: right;
+    margin-top: 23%;
+    text-decoration: none;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.wrap {
+    padding: 62px 6em;
+}
+
+.dark {
+    background: #333333;
+}
+
+.dark h3,
+section.jobs .dark ul li,
+.dark a.btn {
+    color: white;
+}
+
+.more {
+    padding-top: 66px;
+}
+.more a.btn {
+    float: none;
+    display: block;
+    width: 153px;
+    margin: 0 auto;  
+}
+
+/*################################  ABOUT COMPANY  ##################################*/
+.light {
+    background: #fbfbfb;
+    padding: 140px 13em 82px;
+}
+
+section.about-company hgroup {
+    text-align: center;
+}
+section.about-company hgroup h2 {
+    padding: 26px 0 36px;
+    letter-spacing: -1px;
+}
+section.about-company hgroup hr.red {
+    margin-bottom: 61px;
+}
+
+section.about-company p.justify {
+    text-align: justify;
+    margin-bottom: 35px;
+    line-height: 30px;
+    color: #333333;
+    padding: 0 2em;
+}
+
+section.about-company .social {
+    text-align: center;
+    width: 30%;
+    margin: 90px auto;
+}
+
+section.about-company a.facebook {
+    text-indent: -9999px;
+    
+    background: url('../elements/fb.png') no-repeat;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    padding: 0 50px;
+}
+
+section.about-company a.twitter {
+    text-indent: -9999px;
+    
+    background: url('../elements/twitt.png') no-repeat;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+
+}
+section.about-company p.small {
+    margin-bottom: 34px;
+}
+
+/*################################  CONTACT US  ####################################*/
+
+section.contact {
+    padding: 129px 8em 115px 8em;
+    background: #2d2d2d;
+}
+
+section.contact h5::before {
+    content: url('../elements/place-pin-ico.png');
+    padding-right: 10px;
+}
+
+section.contact h5 {
+    margin-left: 20%;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+
+}
+
+section.contact p {
+    margin-left: 20%;
+    font-weight: 300;
+    font-size: 18px;
+    color: #9B9B9B;
+    line-height: 28px;
+
+}
+
+/*################################  FOOTER  ####################################*/
+footer {
+    font-weight: 300;
+    font-size: 12px;
+    color: #5B5B5B;
+    letter-spacing: 2px;
+    background: #242424;
+    padding: 38px 12em 19px;
+}
+.col-6 {
+    width: 50%;
+    padding-left:3em;
+    float: left;
+}
+ 
+footer .copyright {
+     text-transform: uppercase;
+}
+ 
+footer .right {
+    float: right;
+    text-align: right;
+    padding-right: 3em;
+}
+
+footer .right .fa {
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 17px; 
+}
+
+footer .right a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #5B5B5B;
+   
+}
+
+
